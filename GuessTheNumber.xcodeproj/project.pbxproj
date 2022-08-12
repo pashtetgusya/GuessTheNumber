@@ -9,21 +9,51 @@
 /* Begin PBXBuildFile section */
 		E556DDDB28A361660064265A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DDDA28A361660064265A /* AppDelegate.swift */; };
 		E556DDDD28A361660064265A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DDDC28A361660064265A /* SceneDelegate.swift */; };
-		E556DDDF28A361660064265A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DDDE28A361660064265A /* ViewController.swift */; };
-		E556DDE228A361660064265A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E556DDE028A361660064265A /* Main.storyboard */; };
 		E556DDE428A361670064265A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E556DDE328A361670064265A /* Assets.xcassets */; };
-		E556DDE728A361670064265A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E556DDE528A361670064265A /* LaunchScreen.storyboard */; };
+		E556DDF428A362200064265A /* StartGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DDF328A362200064265A /* StartGameView.swift */; };
+		E556DDF628A362680064265A /* EnterNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DDF528A362680064265A /* EnterNumberView.swift */; };
+		E556DDF828A3629F0064265A /* ComputerGuessesNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DDF728A3629F0064265A /* ComputerGuessesNumberView.swift */; };
+		E556DDFA28A362AE0064265A /* PlayerGuessesNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DDF928A362AE0064265A /* PlayerGuessesNumberView.swift */; };
+		E556DDFC28A362E00064265A /* ResultsGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DDFB28A362E00064265A /* ResultsGameView.swift */; };
+		E556DDFE28A362F90064265A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DDFD28A362F90064265A /* Game.swift */; };
+		E556DE0028A363120064265A /* StartGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DDFF28A363120064265A /* StartGameController.swift */; };
+		E556DE0228A363210064265A /* EnterNumberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DE0128A363210064265A /* EnterNumberController.swift */; };
+		E556DE0428A363310064265A /* ComputerGuessesNumberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DE0328A363310064265A /* ComputerGuessesNumberController.swift */; };
+		E556DE0628A363410064265A /* PlayerGuessesNumberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DE0528A363410064265A /* PlayerGuessesNumberController.swift */; };
+		E556DE0828A3634E0064265A /* ResultsGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DE0728A3634E0064265A /* ResultsGameController.swift */; };
+		E556DE0A28A387930064265A /* Guesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DE0928A387930064265A /* Guesser.swift */; };
+		E556DE0D28A3890E0064265A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DE0C28A3890E0064265A /* GameViewModel.swift */; };
+		E556DE0F28A38A2C0064265A /* NumberValid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DE0E28A38A2C0064265A /* NumberValid.swift */; };
+		E556DE1128A38BE00064265A /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DE1028A38BE00064265A /* GameButton.swift */; };
+		E556DE1428A3948E0064265A /* NumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DE1328A3948E0064265A /* NumberTextField.swift */; };
+		E556DE1728A3EFAE0064265A /* GameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DE1628A3EFAE0064265A /* GameLabel.swift */; };
+		E556DE1928A4DDC70064265A /* GameAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556DE1828A4DDC70064265A /* GameAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E556DDD728A361660064265A /* GuessTheNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E556DDDA28A361660064265A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E556DDDC28A361660064265A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E556DDDE28A361660064265A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E556DDE128A361660064265A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E556DDE328A361670064265A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E556DDE628A361670064265A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E556DDE828A361670064265A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E556DDF328A362200064265A /* StartGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameView.swift; sourceTree = "<group>"; };
+		E556DDF528A362680064265A /* EnterNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNumberView.swift; sourceTree = "<group>"; };
+		E556DDF728A3629F0064265A /* ComputerGuessesNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessesNumberView.swift; sourceTree = "<group>"; };
+		E556DDF928A362AE0064265A /* PlayerGuessesNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGuessesNumberView.swift; sourceTree = "<group>"; };
+		E556DDFB28A362E00064265A /* ResultsGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsGameView.swift; sourceTree = "<group>"; };
+		E556DDFD28A362F90064265A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E556DDFF28A363120064265A /* StartGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameController.swift; sourceTree = "<group>"; };
+		E556DE0128A363210064265A /* EnterNumberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNumberController.swift; sourceTree = "<group>"; };
+		E556DE0328A363310064265A /* ComputerGuessesNumberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessesNumberController.swift; sourceTree = "<group>"; };
+		E556DE0528A363410064265A /* PlayerGuessesNumberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGuessesNumberController.swift; sourceTree = "<group>"; };
+		E556DE0728A3634E0064265A /* ResultsGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsGameController.swift; sourceTree = "<group>"; };
+		E556DE0928A387930064265A /* Guesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guesser.swift; sourceTree = "<group>"; };
+		E556DE0C28A3890E0064265A /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		E556DE0E28A38A2C0064265A /* NumberValid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberValid.swift; sourceTree = "<group>"; };
+		E556DE1028A38BE00064265A /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
+		E556DE1328A3948E0064265A /* NumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTextField.swift; sourceTree = "<group>"; };
+		E556DE1628A3EFAE0064265A /* GameLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLabel.swift; sourceTree = "<group>"; };
+		E556DE1828A4DDC70064265A /* GameAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +86,94 @@
 		E556DDD928A361660064265A /* GuessTheNumber */ = {
 			isa = PBXGroup;
 			children = (
-				E556DDDA28A361660064265A /* AppDelegate.swift */,
-				E556DDDC28A361660064265A /* SceneDelegate.swift */,
-				E556DDDE28A361660064265A /* ViewController.swift */,
-				E556DDE028A361660064265A /* Main.storyboard */,
-				E556DDE328A361670064265A /* Assets.xcassets */,
-				E556DDE528A361670064265A /* LaunchScreen.storyboard */,
+				E556DDEE28A361840064265A /* Application */,
+				E556DDEF28A3618E0064265A /* Resources */,
+				E556DDF028A361D00064265A /* Models */,
+				E556DDF228A361DD0064265A /* Views */,
+				E556DE0B28A388F60064265A /* ViewModels */,
 				E556DDE828A361670064265A /* Info.plist */,
 			);
 			path = GuessTheNumber;
+			sourceTree = "<group>";
+		};
+		E556DDEE28A361840064265A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E556DDDA28A361660064265A /* AppDelegate.swift */,
+				E556DDDC28A361660064265A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E556DDEF28A3618E0064265A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E556DDE328A361670064265A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E556DDF028A361D00064265A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E556DDFD28A362F90064265A /* Game.swift */,
+				E556DE0928A387930064265A /* Guesser.swift */,
+				E556DE0E28A38A2C0064265A /* NumberValid.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E556DDF128A361D40064265A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E556DE1528A3EC160064265A /* ViewsElements */,
+				E556DDF328A362200064265A /* StartGameView.swift */,
+				E556DDF528A362680064265A /* EnterNumberView.swift */,
+				E556DDF728A3629F0064265A /* ComputerGuessesNumberView.swift */,
+				E556DDF928A362AE0064265A /* PlayerGuessesNumberView.swift */,
+				E556DDFB28A362E00064265A /* ResultsGameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E556DDF228A361DD0064265A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E556DE1228A3908B0064265A /* Controllers */,
+				E556DDF128A361D40064265A /* Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E556DE0B28A388F60064265A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E556DE0C28A3890E0064265A /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E556DE1228A3908B0064265A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E556DDFF28A363120064265A /* StartGameController.swift */,
+				E556DE0128A363210064265A /* EnterNumberController.swift */,
+				E556DE0328A363310064265A /* ComputerGuessesNumberController.swift */,
+				E556DE0528A363410064265A /* PlayerGuessesNumberController.swift */,
+				E556DE0728A3634E0064265A /* ResultsGameController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E556DE1528A3EC160064265A /* ViewsElements */ = {
+			isa = PBXGroup;
+			children = (
+				E556DE1028A38BE00064265A /* GameButton.swift */,
+				E556DE1328A3948E0064265A /* NumberTextField.swift */,
+				E556DE1628A3EFAE0064265A /* GameLabel.swift */,
+				E556DE1828A4DDC70064265A /* GameAlertController.swift */,
+			);
+			path = ViewsElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E556DDE728A361670064265A /* LaunchScreen.storyboard in Resources */,
 				E556DDE428A361670064265A /* Assets.xcassets in Resources */,
-				E556DDE228A361660064265A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +245,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E556DDDF28A361660064265A /* ViewController.swift in Sources */,
+				E556DE0828A3634E0064265A /* ResultsGameController.swift in Sources */,
+				E556DDFA28A362AE0064265A /* PlayerGuessesNumberView.swift in Sources */,
+				E556DE1928A4DDC70064265A /* GameAlertController.swift in Sources */,
+				E556DE0A28A387930064265A /* Guesser.swift in Sources */,
+				E556DE0D28A3890E0064265A /* GameViewModel.swift in Sources */,
 				E556DDDB28A361660064265A /* AppDelegate.swift in Sources */,
+				E556DDF428A362200064265A /* StartGameView.swift in Sources */,
+				E556DE1728A3EFAE0064265A /* GameLabel.swift in Sources */,
+				E556DE0F28A38A2C0064265A /* NumberValid.swift in Sources */,
+				E556DE0428A363310064265A /* ComputerGuessesNumberController.swift in Sources */,
+				E556DDF628A362680064265A /* EnterNumberView.swift in Sources */,
+				E556DE0028A363120064265A /* StartGameController.swift in Sources */,
+				E556DE0228A363210064265A /* EnterNumberController.swift in Sources */,
+				E556DE0628A363410064265A /* PlayerGuessesNumberController.swift in Sources */,
+				E556DDFC28A362E00064265A /* ResultsGameView.swift in Sources */,
+				E556DDFE28A362F90064265A /* Game.swift in Sources */,
+				E556DE1428A3948E0064265A /* NumberTextField.swift in Sources */,
+				E556DDF828A3629F0064265A /* ComputerGuessesNumberView.swift in Sources */,
 				E556DDDD28A361660064265A /* SceneDelegate.swift in Sources */,
+				E556DE1128A38BE00064265A /* GameButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E556DDE028A361660064265A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E556DDE128A361660064265A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E556DDE528A361670064265A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E556DDE628A361670064265A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E556DDE928A361670064265A /* Debug */ = {
@@ -292,7 +397,7 @@
 				INFOPLIST_FILE = GuessTheNumber/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +425,7 @@
 				INFOPLIST_FILE = GuessTheNumber/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
