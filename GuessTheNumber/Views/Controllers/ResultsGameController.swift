@@ -39,7 +39,7 @@ class ResultsGameController: UIViewController {
         
         if playerTriesConut < computerTriesCount {
             winner = "You win"
-        } else if computerTriesCount > playerTriesConut {
+        } else if computerTriesCount < playerTriesConut {
             winner = "Computer win"
         } else if playerTriesConut == computerTriesCount {
             winner = "Dead heat"
