@@ -44,19 +44,17 @@ class ResultsGameView: UIView {
         NSLayoutConstraint.activate([
             scoresLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
             scoresLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 50),
-            scoresLabel.bottomAnchor.constraint(lessThanOrEqualTo: playerTriesCountLabel.topAnchor),
             
             playerTriesCountLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
             playerTriesCountLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
-            playerTriesCountLabel.bottomAnchor.constraint(lessThanOrEqualTo: computerTriesCountLabel.topAnchor, constant: -20),
+            playerTriesCountLabel.bottomAnchor.constraint(equalTo: computerTriesCountLabel.topAnchor, constant: -20),
             
             computerTriesCountLabel.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor),
             computerTriesCountLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
             computerTriesCountLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
-            computerTriesCountLabel.bottomAnchor.constraint(lessThanOrEqualTo: winnerLabel.topAnchor),
             
             winnerLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
-            winnerLabel.bottomAnchor.constraint(lessThanOrEqualTo: goToMainMenuButton.topAnchor, constant: -50),
+            winnerLabel.bottomAnchor.constraint(equalTo: goToMainMenuButton.topAnchor, constant: -40),
             
             goToMainMenuButton.heightAnchor.constraint(equalToConstant: 48),
             goToMainMenuButton.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),

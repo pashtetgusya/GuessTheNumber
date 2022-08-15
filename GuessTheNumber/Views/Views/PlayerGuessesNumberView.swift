@@ -44,16 +44,14 @@ class PlayerGuessesNumberView: UIView {
         NSLayoutConstraint.activate([
             numberOfGuessesLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
             numberOfGuessesLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 50),
-            numberOfGuessesLabel.bottomAnchor.constraint(lessThanOrEqualTo: playerGuessesLabel.topAnchor),
             
             playerGuessesLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
             playerGuessesLabel.topAnchor.constraint(equalTo: numberOfGuessesLabel.bottomAnchor, constant: 10),
-            playerGuessesLabel.bottomAnchor.constraint(lessThanOrEqualTo: guessTheNumberTextField.topAnchor),
             
             guessTheNumberTextField.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
             guessTheNumberTextField.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
             guessTheNumberTextField.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
-            guessTheNumberTextField.bottomAnchor.constraint(lessThanOrEqualTo: guessTheNumberButton.topAnchor, constant: -40),
+            guessTheNumberTextField.bottomAnchor.constraint(equalTo: guessTheNumberButton.topAnchor, constant: -20),
             
             guessTheNumberButton.heightAnchor.constraint(equalToConstant: 48),
             guessTheNumberButton.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),

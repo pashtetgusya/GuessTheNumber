@@ -29,12 +29,16 @@ class PlayerGuessesNumberController: UIViewController {
 
         setupBindings()
         
+        playerGuessesNumberView.guessTheNumberButton.addTarget(
+            self, action: #selector(guessTheNumberButtonPressed(_:)), for: .touchUpInside)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         viewModel.game.minNumber = 0
         viewModel.game.maxNumber = 100
         viewModel.game.computer.number = viewModel.generateRandomNumber()
-        
-        playerGuessesNumberView.guessTheNumberButton.addTarget(
-            self, action: #selector(guessTheNumberButtonPressed(_:)), for: .touchUpInside)
     }
     
     // MARK: - Private methods

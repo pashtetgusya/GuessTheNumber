@@ -95,22 +95,18 @@ class ComputerGuessesNumberView: UIView {
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-                    
             numberOfGuessesLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
             numberOfGuessesLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 50),
-            numberOfGuessesLabel.bottomAnchor.constraint(lessThanOrEqualTo: computerGuessesLabel.topAnchor),
             
             computerGuessesLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
             computerGuessesLabel.topAnchor.constraint(equalTo: numberOfGuessesLabel.bottomAnchor, constant: 10),
-            computerGuessesLabel.bottomAnchor.constraint(lessThanOrEqualTo: guessesLabel.topAnchor),
             
             guessesLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
-            guessesLabel.topAnchor.constraint(lessThanOrEqualTo: computerGuessesLabel.bottomAnchor, constant: 100),
-            guessesLabel.bottomAnchor.constraint(lessThanOrEqualTo: numberIsLabel.topAnchor),
+            guessesLabel.topAnchor.constraint(equalTo: computerGuessesLabel.bottomAnchor, constant: 80),
             
             numberIsLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
             numberIsLabel.widthAnchor.constraint(equalTo: buttonsStackView.widthAnchor),
-            numberIsLabel.bottomAnchor.constraint(lessThanOrEqualTo: buttonsStackView.topAnchor, constant: -10),
+            numberIsLabel.bottomAnchor.constraint(equalTo: buttonsStackView.topAnchor, constant: -10),
             
             buttonsStackView.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
             buttonsStackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -50),

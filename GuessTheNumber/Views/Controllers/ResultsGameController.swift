@@ -35,7 +35,15 @@ class ResultsGameController: UIViewController {
     private func whoIsWinner() {
         let playerTriesConut = viewModel.game.player.triesCount
         let computerTriesCount = viewModel.game.computer.triesCount
-        let winner = playerTriesConut < computerTriesCount ? "You win" : "Computer win"
+        var winner = ""
+        
+        if playerTriesConut < computerTriesCount {
+            winner = "You win"
+        } else if computerTriesCount > playerTriesConut {
+            winner = "Computer win"
+        } else if playerTriesConut == computerTriesCount {
+            winner = "Dead heat"
+        }
         
         resultGameView.playerTriesCountLabel.text = "Your's tries count: \(playerTriesConut)"
         resultGameView.computerTriesCountLabel.text = "Computer's tries count: \(computerTriesCount)"
